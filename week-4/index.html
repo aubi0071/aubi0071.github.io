@@ -12,6 +12,7 @@
 </head>
 <!-- shortcut for comments is cmd+/ -->
 <!-- <a> means "Anchor" and is a paired tag. href means "hyperlink reference" -->
+<!-- AAAAH I staged everything together but I should have not included contact.html -->
 
 <body>
     <header>
@@ -21,12 +22,23 @@
         <h1>Reggie's Coffee Shoppe</h1>
         <!-- There should only be ONE h1, then Abhay uses h2 inside article, and h3 for 
             everything else. h4 is when there's something inside an h3 -->
-        <nav>NAVIGATION</nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
         <!-- nav text is to remind us to make the nav later -->
     </header>
     <!-- Abhay adds comments before each new section to keep things clear, something like: -->
     <!-- *********MAIN CONTENT FOR PAGE********** -->
     <main>
+        <!-- adding an on-page link -->
+        <a href="#treatofweek">Treat of the Beak</a>
         <!-- **********MAIN ARTICLE********** -->
         <article>
             <h2>Our Story</h2>
@@ -81,12 +93,12 @@
             <ol>
                 <!-- "HTML entities" are special codes to use in our coding. Even apostrophes could display as a square if not made an entity. https://www.freeformatter.com/html-entities.html -->
                 <!-- You can change the format of ordered lists with CSS -->
-                <li>Feb 23<sup>th</sup> &hyphen; all e-tents and purposes</li>
+                <li>Feb 23<sup>th</sup> &hyphen; all e-tents and porpoises</li>
                 <li>Mar 17<sup>rd</sup> &hyphen; predicted last day of summer</li>
             </ol>
         </section>
         <!-- **********TREAT OF THE WEEK********** -->
-        <section>
+        <section id="treatofweek">
             <h3>Treat of the Beak</h3>
             <dl>
                 <dt>Name</dt>
@@ -97,7 +109,7 @@
                 <dd>
                     <ul>
                         <!-- alt+cmd+arrow keys=multiple edit points. esc to deselect -->
-                        <!-- fn*n also works. e.g. li*3 -->
+                        <!-- fn*n also creates multiple tags. e.g. li*3 -->
                         <li>worms</li>
                         <li>bird saliva</li>
                         <li>salt</li>
@@ -106,6 +118,9 @@
                     </ul>
                 </dd>
             </dl>
+            <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank">
+                Get the Bread Out</a>
+                <!-- target location doesn't matter. "blank" opens in a BLANK tab -->
         </section>
     </main>
     <!-- **********FOOTER********** -->
