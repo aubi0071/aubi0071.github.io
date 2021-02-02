@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- you can also add "attribute tags" to line 2, like language codes -->
+
+<head>
+    <!-- You should ALWAYS have the following tags: -->
+    <meta charset="UTF-8">
+    <!-- meta refers to additional info; everything after defines this page.
+        In this case, "UTF" is saying that each character takes 8 bits of memory.
+        Different languages use dif UTF settings, but Latin characters take 8 -->
+    <title>Reggie's Coffee Shoppe - Home</title>
+</head>
+<!-- shortcut for comments is cmd+/ -->
+<!-- <a> means "Anchor" and is a paired tag. href means "hyperlink reference" -->
+
+<body>
+    <header>
+        <!-- there's a difference between span and div but I don't fullllly get it 
+        update: I get it. span applies more to CSS, div puts things on their own line -->
+        <!-- <b> is used to make keywords & bold can be undone -->
+        <h1>Reggie's Coffee Shoppe</h1>
+        <!-- There should only be ONE h1, then Abhay uses h2 inside article, and h3 for 
+            everything else. h4 is when there's something inside an h3 -->
+        <nav>NAVIGATION</nav>
+        <!-- nav text is to remind us to make the nav later -->
+    </header>
+    <!-- Abhay adds comments before each new section to keep things clear, something like: -->
+    <!-- *********MAIN CONTENT FOR PAGE********** -->
+    <main>
+        <!-- **********MAIN ARTICLE********** -->
+        <article>
+            <h2>Our Story</h2>
+            <!-- FEB2: img tag doesn't need to close, but DOES need "src" and "alt". Alt is useful
+            for SEO (and accessibility, obvs). "title" gives mouse-over text.
+            - Should stay away from width and height attributes--we're controling that w/CSS. 
+            - Resize images to the max size before you upload to the site -->
+            <!-- Abhay wants any files related to our sites in a folder. Doesn't need to happen,
+            but it cleans things up! -->
+            <img src="images/coffee-shop.jpg" alt="a cup of fine steaming brown juice"
+                title="tea is a waste of time. buy our coffee">
+            <blockquote>
+                We love terazzo <cite> -everyone in the 50s</cite>
+            </blockquote>
+            <p>
+                <!-- shorter text can go on the same line as tags but longer should get a break -->
+                <!-- "Block-level elements"  take full width (like blockquote, p) and in-line shows 
+                    along with everything else (like em, abbr). This will change when we do CSS-->
+                We are a <em>Family-pwned buisiness</em>. Reggie is the <abbr title="Careless Egg Opener">CEO</abbr> and
+                makes a lot of messes. <br>
+                <!-- you can add multiple br tags in a row to style (extra space) BUT don't!! Leave that to CSS.-->
+                Maria is the pastry chef and wonders where all her eggs keep going.<br>
+                Celebrating their 10<sup>th</sup> annipursary in December 2021, they'd really like a new purse so they
+                can stop sharing one.
+            </p>
+            <hr>
+            <!-- hr is used to split information in a single section, NOT as formatting for a title -->
+            <!-- **********"ABOUT" SECTION OF THE ARTICLE********** -->
+            <section>
+                <h3>About Us</h3>
+                <p>
+                    We are a <sub>4</sub>local coffe shop based in Ottawa. Our specialty is <b>organic fair-trade</b>
+                    coffifee.
+                    <!-- for italics, use CSS. if you want to give the text a MEANING, use HTML like "em" -->
+                    <!-- "b" is here used for SEO -->
+                </p>
+            </section>
+        </article>
+        <!-- **********SIDEBAR INFO********** -->
+        <aside>
+            <h3>Merch</h3>
+            <!-- ONLY list items can be children of ordered or unordered lists -->
+            <ul>
+                <li>Y-Shirts</li>
+                <li>Bats</li>
+                <li>Cooties</li>
+            </ul>
+        </aside>
+        <!-- **********EVENTS SECTION********** -->
+        <section>
+            <h3>E-Tents</h3>
+            <ol>
+                <!-- "HTML entities" are special codes to use in our coding. Even apostrophes could display as a square if not made an entity. https://www.freeformatter.com/html-entities.html -->
+                <!-- You can change the format of ordered lists with CSS -->
+                <li>Feb 23<sup>th</sup> &hyphen; all e-tents and purposes</li>
+                <li>Mar 17<sup>rd</sup> &hyphen; predicted last day of summer</li>
+            </ol>
+        </section>
+        <!-- **********TREAT OF THE WEEK********** -->
+        <section>
+            <h3>Treat of the Beak</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd>Organic Worms</dd>
+                <dt>calories</dt>
+                <dd>like 3&quest;</dd>
+                <dt>Ingredients</dt>
+                <dd>
+                    <ul>
+                        <!-- alt+cmd+arrow keys=multiple edit points. esc to deselect -->
+                        <!-- fn*n also works. e.g. li*3 -->
+                        <li>worms</li>
+                        <li>bird saliva</li>
+                        <li>salt</li>
+                        <li>xantham gum</li>
+                        <li>ketchup</li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+    </main>
+    <!-- **********FOOTER********** -->
+    <footer>
+        <p>&copy;Copyright Reggie&apos;s Coffee Shoppe, 2021</p>
+    </footer>
+</body>
+
+</html>
