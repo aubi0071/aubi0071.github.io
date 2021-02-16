@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I've removed notes from previous weeks to clean up my code -->
+
+<head>
+    <!-- You should ALWAYS have the following tags: -->
+    <meta charset="UTF-8">
+    <title>Reggie's Coffee Shoppe - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- these next links aren't part of class (at least as of 0216) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- ALYWAYS include link in head of doc -->
+</head>
+
+<body>
+    <header>
+        <!-- you could make a inline style with a "style" attribute on any tag, but DON'T! -->
+        <h1>GARY's Coffee Shoppe</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- *********MAIN CONTENT FOR PAGE********** -->
+    <main>
+        <!-- adding an on-page link -->
+        <a href="#treatofweek" class="orange-link">Treat of the Beak</a>
+        <!-- **********MAIN ARTICLE********** -->
+        <article>
+            <h2>Our Story</h2>
+            <img src="images/coffee-shop.jpg" alt="a cup of fine steaming brown juice"
+                title="tea is a waste of time. buy our coffee">
+            <blockquote class="large-text">
+                We love terazzo <cite> -everyone in the 50s</cite>
+            </blockquote>
+            <p>
+                We are a <em>Family-pwned buisiness</em>. GARY is the <abbr title="Careless Egg Opener">CEO</abbr> and
+                makes a lot of messes. <br>
+                Maria is the pastry chef and wonders where all her eggs keep going.<br>
+                Celebrating their 10<sup>th</sup> annipursary in December 2021, they'd really like a new purse so they
+                can stop sharing one.
+            </p>
+            <hr>
+            <!-- **********"ABOUT" SECTION OF THE ARTICLE********** -->
+            <section>
+                <h3>About Us</h3>
+                <p>
+                    We are a <sub>4</sub>local coffe shop based in Ottawa. Our specialty is <b>organic fair-trade</b>
+                    coffifee.
+                </p>
+            </section>
+        </article>
+        <!-- **********SIDEBAR INFO********** -->
+        <aside>
+            <h3>Merch</h3>
+            <ul>
+                <li>Y-Shirts</li>
+                <li>Bats</li>
+                <li>Cooties</li>
+            </ul>
+        </aside>
+        <!-- **********EVENTS SECTION********** -->
+        <section>
+            <h3>E-Tents</h3>
+            <ol>
+                <!-- "HTML entities" are special codes to use in our coding. Even apostrophes could display as a square if not made an entity. https://www.freeformatter.com/html-entities.html -->
+                <li>Feb 23<sup>th</sup> &hyphen; all e-tents and porpoises</li>
+                <li>Mar 17<sup>rd</sup> &hyphen; predicted last day of summer</li>
+            </ol>
+        </section>
+        <!-- **********TREAT OF THE WEEK********** -->
+        <section id="treatofweek">
+            <h3>Treat of the Beak</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd>Organic Worms</dd>
+                <dt>calories</dt>
+                <dd>like 3&quest;</dd>
+                <dt>Ingredients</dt>
+                <dd>
+                    <ul>
+                        <li>worms</li>
+                        <li>bird saliva</li>
+                        <li>salt</li>
+                        <li>xantham gum</li>
+                        <li>ketchup</li>
+                    </ul>
+                </dd>
+            </dl>
+            <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank" class="orange-link large-text">
+                Get the Bread Out</a>
+        </section>
+        <!-- ADDING SECTON FOR MENU -->
+        <section>
+            <h3>Man-U Spatials</h3>
+            <table border>
+                <thead>
+                    <tr>
+                        <th colspan="2">Interns</th>
+                        <th rowspan="2">Lane Pryce</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Organic Worms</td>
+                        <td>3</td>
+                        <td>&dollar;420</td>
+                    </tr>
+                    <tr>
+                        <td>goatmeal</td>
+                        <td>sooo many</td>
+                        <td>&dollar;15 <sub>&ast;goat not included</sub></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- **********FOOTER********** -->
+    <footer class="site-footer">
+        <p>&copy;Copyright Reggie&apos;s Coffee Shoppe, 2021</p>
+    </footer>
+</body>
+
+</html>
