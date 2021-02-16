@@ -1,0 +1,154 @@
+/* there are different kind of links: anchor tags, and linking css and html files */
+/* should use just one css sheet for the entire site */
+/* style mostly using class bc id can give you issues */
+/* as always, the tags, ids, classes are all the same as Abhay's but my formatting is different */
+
+/* FEB 16 */
+/* Second styling overrides the first (concept of cascading). Happens too w sheets. We're loading browswer css first (called normal user agent declarations), then ours (normal author declarations).
+- can label styles as "!important" and make them take precidence */
+
+body {
+    color: darkslategray;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: tomato;
+}
+
+p { 
+    background-color: lightblue;
+}
+
+h2, h3, h4{
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+}
+
+/* we've skipped "li" below, and we could also skip "ul" if we wanted... it's just about your end goal */
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+/* class name selector */
+/* if you want to use class names/ids, you have to put a period/# in front of the name otherwise it'll call up a tag */
+.orange-link{
+    text-decoration: none;
+    background-color: darkslategray;
+    color: white;
+}
+/* id selector */
+#treatofweek{
+    background-color: tomato;
+    color: white;
+}
+
+.large-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    /* the default font size for browsers is 16px */
+}
+/* you can also use attribute/ class selector BUT it'll only select that tag
+nothing with extra tags will be selected. There's actually some cool styling there
+*=contains */
+
+a[href="#treatofweek"]{
+    font-weight: bold;
+    font-family: comicsansms;
+    font-size: 20px;
+}
+
+[title*="Egg"]{
+    background-color: yellow;
+}
+
+/* child selector or direct child selector */
+article > p{
+    font-size: 24px;
+}
+
+/* adjacent sibling selector */
+h3 + ul{
+    border: 5px dashed tomato;
+}
+
+/* using pseudo classes (hover is a pseudo class)
+& styling navigation 
+Order: LoVe HAte--Link Visisted Hover Active
+no space between colon and pseudo class*/
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: steelblue;
+    box-shadow: -2px 2px 4px 2px black;
+    /* horizontal vertical blur spread colour */
+}
+
+nav ul a:hover,
+nav ul a:focus{ 
+    text-decoration: underline;
+/* need to have focus for keybaord input */
+}
+
+nav ul a:active{
+    box-shadow: inset 0px 0px 10px 2px black;
+}
+
+/* position-related pseudo class selectors */
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+/* dl ul li:nth-child(odd){
+    font-weight: bold;
+    background-color: burlywood;
+} */
+
+/* dl ul li:nth-child(3){
+    font-weight: bold;
+    background-color: burlywood;
+} */
+
+/* nth child using formula
+n = 0, 1, 2, 3, etc. (Selects all)
+even = 2n = 0, 2, 4, 6, etc. (selects even)
+odd = 2n+1 = 1, 3, 5, 7, etc (selects odd)
+can create other equations for weird selections */
+
+section ol li:last-child{
+    font-weight: bold;
+}
+
+/* FEB 16 - css specificty */
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+body footer {
+    background-color: rgb(255, 196, 0);
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: hotpink;
+}
+
+footer.site-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* "body footer" not only comes second, but is more sepcific. Even if the order was reversed, the more specifc style takes precidence */
+
