@@ -1,6 +1,19 @@
+/* midterm notes: body colour is rgba(0, 0, 0, 50) */
+
+html {
+    font-size: 16px;
+}
+
 body {
     color: darkslategray;
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px 20px; */
+        /* X,Y. Just one value controls both */
+    /* background-size: cover; */
+        /* can use px, %, but most common is directives (like contain, cover) */
 }
 
 h1 {
@@ -41,13 +54,30 @@ nav ul a{
 }
 /* id selector */
 #treatofweek{
-    background-color: tomato;
+    /* background-color: tomato; */
     color: white;
+    /* font-size: 24px;
+    padding: 1px 40px; */
+    /* can just use background as a shorthand for multiple background values */
+    background: tomato url("../images/bread.jpg") no-repeat center center ; 
+    /* can use /cover in background for scaling image BUT doesn't work for every browser */
+    background-size: cover;
+    font-size: 1.5rem;
+    /* rem=root element fontsize - use it when you're using font size value */
+    /* em=element fontsize (so in this case the font size is 1.5 rem) - use it when you're using padding or margin */
+    padding: 1em;
+    width: 50%;
+    /* percentages are based on parents; in this case, the parent is browser size */
 }
 
+/* abhay added the following to override his background colours (I'm leaving mine): */
+/* #treatofweek dl ul li:nth-child(n) {
+    background-color: transparent;
+} */
+
 .large-text{
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 1.25rem;
+    /* text-transform: uppercase; */
     /* the default font size for browsers is 16px */
 }
 
@@ -105,10 +135,11 @@ aside ul li:first-child{
     font-weight: bold;
 }
 
-/* dl ul li:nth-child(odd){
+dl ul li:nth-child(odd){
     font-weight: bold;
-    background-color: burlywood;
-} */
+    background-color: rgb(247, 233, 215);
+    color: black;
+}
 
 /* dl ul li:nth-child(3){
     font-weight: bold;
