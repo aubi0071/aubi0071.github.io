@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reggie's Coffee Shoppe - Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Reggie's Coffee Shoppe</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- *********MAIN CONTENT FOR PAGE********** -->
+    <main>
+        <!-- below isn't tagged as article cause it only works on this page -->
+        <!-- Also, be warned: the text is all stupid but the tags are exactly as Abhay did -->
+        <h2>Contact Us</h2>
+        <table>
+            <caption>Horse of Operation</caption>
+            <!-- not thead, t-head! table head -->
+            <!-- tr is table row, th is table heading, td is table data -->
+            <!-- don't style your tables with "border"! -->
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Horse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mon-fri</td>
+                    <td>Daisy</td>
+                </tr>
+                <tr>
+                    <td>sat</td>
+                    <td>Bessie the Cow</td>
+                </tr>
+                <tr>
+                    <td>sun</td>
+                    <td>Sunny</td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h2>We'd love to hear you!</h2>
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullname">Kindly Scrawl Your Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Chicken Scratch Only">
+                </div>
+                <div>
+                    <label for="youremail">Electronic Carrier Pigeon Coordinates:</label>
+                    <input type="email" id="youremail" name="youremail" placeholder="turkeyseason@coffeeshop.io" required>
+                </div>
+                <div>
+                    <label for="message">Write us love notes from your prison cell</label>
+                    <textarea name="message" id="message"></textarea>
+                    <!-- Abhay removes rows/cols and uses height/width -->
+                </div>
+                <div>
+                    <label for="tickets">How many pieces of parchment? (sold in pairs)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="69" step="2">
+                    <!-- there's a shortcut for input--input:number -->
+                </div>
+                <div>
+                    <label for="row">Select Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Corn Row</option>
+                        <option value="centre" selected>Skid Row</option>
+                        <option value="back">Death Row</option>
+                    </select>
+                    <!-- use "selected" to preselect options (boolean--see below) -->
+                </div>
+                <div>
+                    <h3>Bird shorts or board shorts?</h3>
+                    <label for="yes">Bird!</label>
+                    <input type="radio" name="past" id="yes" checked>
+                    <label for="no">Board</label>
+                    <input type="radio" name="past" id="no">
+                    <!-- v important here: your name for radio has to be the same 
+                    (unlike every other instance of name). Disconnecting them lets
+                    you select BOTH fields instead of a pong effect thing -->
+                </div>
+                <div>
+                    <h3>Police Ease</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree that police shouldn't get more funding</label>
+                </div>
+                    <button type="submit">FLY, BIRD, FLY!</button>
+            </form>
+            <!-- "method=get" is when the info is not sensitive (like a search) 
+                - Can copy/paste the URL and get the same result.
+                "Post" is when the info is hidden (like a login)-->
+            <!-- there's a few things to remember when using forms:
+                - ALWAYS need id and name tags for input. id matches "for" in label
+                - name doesn't matter all that much BUT...
+                - no two input tags can have the same name
+                - value fills the box with text that's always there (unless you erase it)
+                - type matters! putting "email" stops exploitative codes from running 
+                    - also it changes the keyboards on mobile devices
+                - required is a BOOLEAN attribute and is only set by its name-->
+            <!-- mailto: is an OLD way of doing emails! It'll open your Outlook to send -->
+
+        </section>
+    </main>
+    <!-- **********FOOTER********** -->
+    <footer>
+        <p>&copy;Copyright Reggie&apos;s Coffee Shoppe, 2021</p>
+    </footer>
+</body>
+
+</html>

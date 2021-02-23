@@ -1,0 +1,262 @@
+/* midterm notes: body colour is rgba(0, 0, 0, 50) */
+/* When you use float, ALWAYS use clearfix (add it to the parent)
+    .clearfix:after{
+        content: "";
+        display: table;
+        clear: both;
+     }
+      */
+/* should use flex & grid instead of float & ...other thing */
+/* how to do midterm is outlines around 4h in the recording (4:11 if he was recording breaks)*/
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: darkslategray;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+    padding-top: 92px;
+    /* header is disappearing behind the nav bar, so we added this to fix that! 
+    got the 92px number by inspecting the nav*/
+
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px 20px; */
+        /* X,Y. Just one value controls both */
+    /* background-size: cover; */
+        /* can use px, %, but most common is directives (like contain, cover) */
+}
+
+h1 {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+/* the following is me screwing around */
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    /* margin-top: 92px; 
+    this can also be used to get the header out of the way of the nav*/
+}
+
+header {
+    background-color: tomato;
+}
+
+p { 
+    background-color: lightblue;
+}
+
+h2, h3, h4{
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 49%;
+    /* 50% width doesn't work cause there's some padding on the elements... I think that's the term */
+    /* NOPE it's a margin issue. Not padding. You need to use margin: -3px to remove it */
+    /* But then again we shouldn't be using inline-block anyway so */
+    /* if we add padding then it'll break it too */
+    padding: 1em;
+    box-sizing: border-box;
+    /* border-box fixes things!! Does it? Idk doesn't look like it */
+}
+
+nav ul a{
+    display: block;
+    /* ugh i need to get off ig. what's up with block?? around 1:30 in the lecture video */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* class name selector */
+.orange-link{
+    padding: 1.5em;
+    /* with padding it overlaps other things bc it's inline */
+    display: inline-block;
+    /* inline-block is "the best of both worlds". More text can appear next to it but still has padding, width, margin applied properly */
+    width: 300px;
+    text-decoration: none;
+    background-color: darkslategray;
+    color: orange;
+    /* clear: both; */
+    /* the above doesn't work and abhay doesn't know why */
+}
+
+/* Float */
+article,
+aside{
+    width: 80%;
+    background-color: rgba(255,255,255,0.6);
+    /* We will use this for the midterm!!!! */
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside{
+    width: 20%;
+}
+
+img{
+    width: 100%;
+    /* makes the image take 100% of its PARENT. Not of its actual resolution */
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+/* section{
+    clear: both;
+}
+    /* clearing the float--can use left, but both saves us in the future too */
+    /* was originally on #treatofweek but events were creeping up so we had to make it broader */
+    /* could instead put article and aside inside a div with a class of clearfix */
+    /* SHOULD do that, actually */
+
+.orange-link.large-text{
+    position: absolute;
+    /* position: absolute moves it against the viewport. need to make the parent relative */
+    right: 0;
+    bottom: 0;
+}
+
+/* id selector */
+#treatofweek{
+    /* background-color: tomato; */
+    color: white;
+    position: relative;
+    /* fixes orange-link.large-text's position */
+    /* font-size: 24px;
+    padding: 1px 40px; */
+    /* can just use background as a shorthand for multiple background values */
+    background: tomato url("../images/bread.jpg") no-repeat center center ; 
+    /* can use /cover in background for scaling image BUT doesn't work for every browser */
+    background-size: cover;
+    font-size: 1.5rem;
+    /* rem=root element fontsize - use it when you're using font size value */
+    /* em=element fontsize (so in this case the font size is 1.5 rem) - use it when you're using padding or margin */
+    padding: 1em 1em 3em 1em;
+    /* can have 1 value for all padding, or do 4 (top, right, bottom, left) */
+    /* adding padding to the bottom fixes positioning issues */
+    width: 50%;
+    /* percentages are based on parents; in this case, the parent is browser size */
+}
+
+/* abhay added the following to override his background colours (I'm leaving mine): */
+/* #treatofweek dl ul li:nth-child(n) {
+    background-color: transparent;
+} */
+
+.large-text{
+    font-size: 1.25rem;
+    /* text-transform: uppercase; */
+    /* the default font size for browsers is 16px */
+}
+
+a[href="#treatofweek"]{
+    font-weight: bold;
+    font-family: comicsansms;
+    font-size: 20px;
+}
+
+[title*="Egg"]{
+    background-color: yellow;
+}
+
+/* child selector or direct child selector */
+article > p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    /* don't use a line-height of 1, common is 1.2-1.6 */
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* adjacent sibling selector */
+h3 + ul{
+    border: 5px dashed tomato;
+}
+
+/* using pseudo classes (hover is a pseudo class)
+& styling navigation 
+Order: LoVe HAte--Link Visisted Hover Active
+no space between colon and pseudo class*/
+nav{
+    position: fixed;
+    /* fixed position removes element width */
+    width: 100%;
+    /* Width fixes the position issue! */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: steelblue;
+    box-shadow: -2px 2px 4px 2px black;
+    /* horizontal vertical blur spread colour */
+}
+
+nav ul a:hover,
+nav ul a:focus{ 
+    text-decoration: underline;
+/* need to have focus for keybaord input */
+}
+
+nav ul a:active{
+    box-shadow: inset 0px 0px 10px 2px black;
+}
+
+/* position-related pseudo class selectors */
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+dl ul li:nth-child(odd){
+    font-weight: bold;
+    background-color: rgb(247, 233, 215);
+    color: black;
+}
+
+
+
+section ol li:last-child{
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+body footer {
+    background-color: rgb(255, 196, 0);
+    padding: 20px;
+}
+
+.site-footer {
+    background-color: hotpink;
+}
+
+footer.site-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
