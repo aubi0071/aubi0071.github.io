@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLING FOR PAGE BEGINS */
+
+/* Whole page styles */
+
+html {
+    font-size: 16px;
+    background-color: #aad4cf;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: rgba(255,255,255,0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 1%;
+    line-height: 1.25;
+}
+
+
+.pagetitle {
+    color: white;
+    display: inline-block;
+    position: relative;
+    background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
+    background-size: 100%;
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 185px;
+    padding-bottom: 70px;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 32%;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+}
+
+nav ul li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+
+img {
+    width: 225px;
+    float: left;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+/* Contact Area styling */
+
+.contact {
+    border: 1px solid black;
+    padding: 2%;
+}
+
+section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 1;
+}
+
+.button-send {
+    border: 1px solid black;
+    padding: 1%;
+    background-color: rgba(255,255,255,0)
+}
+
+.contact-area {
+    line-height: 2;
+}
+
+#fullname, #youremail, #yourmessage {
+    width: 100%;
+}
+
+#yourmessage{
+    padding-bottom: 6%;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* Footer styling */
+
+footer {
+    text-align: right;
+    padding: 2%;
+}
