@@ -62,6 +62,15 @@ h1, h2, h3, h4 {
     padding-bottom: 2%;
 }
 
+h1 {
+    color: white;
+    display: inline-block;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -77,23 +86,15 @@ h4 {
 body {
     background-color: rgba(255,255,255,0.5);
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
 /* Header Styles */
 
-.pagetitle {
-    color: white;
-    display: inline-block;
+.container {
     position: relative;
-    background: url("../images/lone-starfish-wide.jpg") no-repeat center center;
-    background-size: 100%;
-    width: 100%;
-    font-size: 4rem;
     text-align: center;
-    padding-top: 185px;
-    padding-bottom: 70px;
 }
 
 nav {
@@ -131,7 +132,7 @@ main {
     line-height: 1.25;
 }
 
-img {
+.article-img {
     width: 225px;
     float: left;
     padding-right: 2%;
