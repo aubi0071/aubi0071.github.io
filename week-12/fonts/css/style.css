@@ -1,0 +1,14 @@
+.btn {
+    color: #fff;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    border: solid #111 1px;
+    border-radius: 7px;
+    background-color: #666;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    /* font-family: 'Mr Dafoe', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
