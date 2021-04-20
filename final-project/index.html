@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/62fc22c377.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -13,16 +15,20 @@
     <header>
         <div class="navigation">
             <nav>
-                <ul>
-                    <li><img src="./images/logo.png" alt="logo"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><input type="text" placeholder="Search"></li>
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </ul>
+                <div class="flex-nav">
+                    <ul>
+                        <li><img src="./images/logo.png" alt="logo"></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search" class="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>   
+                </div> 
             </nav>
         </div>
         <div class="hero">
@@ -43,14 +49,14 @@
                 <div class="about-txt">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus repudiandae doloremque officiis perferendis deleniti amet, quas itaque quibusdam. Quasi atque ullam exercitationem possimus illum placeat dolorum, necessitatibus numquam aliquam.</p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad quaerat minima error consequuntur eos at dolorem suscipit nesciunt autem possimus, saepe tempore laborum fugit! Nam dolor neque modi excepturi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ad quaerat minima error consequuntur eos at dolorem suscipit nesciunt autem possimus, saepe tempore laborum fugit! Nam dolor neque modi excepturi.</p>
                 </div>
             </div>
         </div>
         <!-- *****SERVICES***** -->
         <div class="services">
             <div class="container">
-                <div class="content"><h2>Our Services</h2></p></div>
+                <div class="content-title"><h2>Our Services</h2></div>
                 <div class="content">
                     <img src="./images/digital.jpg" alt="digital">
                     <h3>Digital Transformation</h3>
@@ -94,30 +100,32 @@
         </div>
         <!-- *****OUR TEAM***** -->
         <div class="team">
-            <div class="content">
-                <h2>Our Team</h2>
-            </div>
-            <div class="content">
-                <img src="./images/bob.jpg" alt="bob">
-            </div>
-            <div class="content">
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa, minus hic adipisci fuga aut fugiat, enim tempore incidunt aliquam placeat accusamus dolorem porro. Animi rerum eveniet magnam laudantium dolor.</p>
-            </div>
-            <div class="content">
-                <img src="./images/john.jpg" alt="john">
-            </div>
-            <div class="content">
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa, minus hic adipisci fuga aut fugiat, enim tempore incidunt aliquam placeat accusamus dolorem porro. Animi rerum eveniet magnam laudantium dolor.</p>
+            <div class="container">
+                <div class="content-title">
+                    <h2>Our Team</h2>
+                </div>
+                <div class="content">
+                    <img src="./images/john.jpg" alt="john">
+                </div>
+                <div class="content">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa, minus hic adipisci fuga aut fugiat, enim tempore incidunt aliquam placeat accusamus dolorem porro. Animi rerum eveniet magnam laudantium dolor.</p>
+                </div>
+                <div class="content">
+                    <img src="./images/bob.jpg" alt="bob">
+                </div>
+                <div class="content">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa, minus hic adipisci fuga aut fugiat, enim tempore incidunt aliquam placeat accusamus dolorem porro. Animi rerum eveniet magnam laudantium dolor.</p>
+                </div>
             </div>
         </div>
         <!-- *****CONTACT US***** -->
-        <div class="contact">
+        <div class="contact-us">
             <div class="container">
-                <div class="content"><h2>Contact Us</h2></div>
+                <div class="content-title"><h2>Contact Us</h2></div>
                 <div class="content">
                     <h3>Send us a message</h3>
                     <form action="thanks.html" method="get" class="contact">
@@ -134,10 +142,7 @@
                             <input type="text" id="yourmessage" name="yourmessage" required>
                         </div>
                         <button type="submit" class="button-send">Send</button>
-                </div>
-                <div class="content">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11216.156593565904!2d-75.7569228!3d45.348022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617672135533!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </form>
                 </div>
                 <div class="content">
                     <h3>Hours of operation</h3>
@@ -159,7 +164,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!-- Need table -->
+                </div>
+                <div class="content">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11216.156593565904!2d-75.7569228!3d45.348022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20%E2%80%93%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1617672135533!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
