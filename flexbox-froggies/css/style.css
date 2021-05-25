@@ -1,0 +1,87 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------CSS RESET-----------*/
+
+ol {
+    list-style: decimal;
+    padding: 1.5em 3em;
+    margin: 0 auto;
+    Font-Family: 'Open Sans', Sans-Serif;
+    Font-Size: 15px;
+    background-color: #FFB4A2;
+    max-width: 66%;
+}
+
+li {
+    padding: .5em;
+}
+
+h1 {
+    Font-Family: 'Raleway', Sans-Serif;
+    Font-Size: 44px;
+}
+
+h2 {
+    Font-Family: 'Open Sans', Sans-Serif;
+    Font-Size: 15px;
+}
+
+h1, h2 {
+    color: white;
+}
+
+header {
+    margin: 2.5em;
+}
+
+body {
+    background-color: #6D6875;
+}
