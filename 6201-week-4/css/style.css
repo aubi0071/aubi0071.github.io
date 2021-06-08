@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------END CSS RESET------- */
+
+/* ========================TEXT STYLES===================== */
+
+body, input {
+    font-family: 'Montserrat', sans-serif;
+    line-height: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60pt;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40pt;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+.header p {
+    font-size: 24pt;
+    padding: .5rem 0;
+}
+
+.apply-now p, .apply-now label, footer p {
+    font-size: 16pt;
+}
+
+.apply-now .status {
+    font-size: 14pt;
+}
+
+.apply-now input {
+    font-size: 16pt;
+    color: #9B9B9B;
+    background-color: #F4F4F5;
+    border-radius: 11px;
+    border-style: none;
+}
+
+.apply-now button {
+    background-color: #57eeab;
+    border-style: none;
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 24pt;
+    width: 100%;
+    padding: 1rem;
+}
+
+.apply-now a {
+    text-decoration: none;
+    color: #ff8480;
+}
+
+footer input {
+    font-size: 16pt;
+    color: #9B9B9B;
+    background-color: #F4F4F5;
+    border-radius: 11px;
+    border-style: none;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer button {
+    background-color: #ff8480;
+    color: #fff;
+    border-style: none;
+    border-radius: 11px;
+    font-weight: 700;
+    font-size: 24pt;
+    width: 100%;
+    padding: .5rem;
+}
+
+.icons i {
+    font-size: 3rem;
+    margin: 3rem 0;
+    color: #333131;
+}
+
+.icons a:nth-child(3), .icons a:nth-child(5) {
+    display: none;
+}
+
+.icons p {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ======================================QUESTION FOR ROB
+
+#terms {
+    appearance: none;
+    border: 1px solid black
+} 
+*/
+
+.logo-img {
+    width: 160px;
+    padding: .6rem;
+}
+
+.main-img {
+    width: 92.5%;
+}
+
+main, footer {
+    padding: 0px 36px;
+}
+
+body {
+    background-color: #f7f7ff;
+}
+
+footer {
+    background-color: #fffd8c;
+}
+
+.apply-now {
+    background-color: #FFF;
+    border-radius: 26px;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, .4);
+    padding: 2em;
+    margin: 1rem 0 3rem 0;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62fc22c377.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+            <div class="header">
+                <img src="./images/logo/logo.png" alt="logo" class="logo-img">
+                <h1>Want to be your own boss?</h1>
+                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            </div>
+            <img src="./images/bg-image/scooter.svg" alt="scooter" class="main-img">
+            <div class="apply-now">
+                <h2>Apply Now</h2>
+                <p>Enter your info below.</p>
+                    <form action="thanks.html" method="get" class="drive">
+                        <div>
+                            <label for="firstname"></label>
+                            <input type="text" id="firstname" name="firstname" value="First name">
+                        </div>
+                        <div>
+                            <label for="lastname"></label>
+                            <input type="text" id="lastname" name="lastname" value="Last name">
+                        </div>
+                        <div>
+                            <label for="phonenumber"></label>
+                            <input type="tel" id="phonenumber" name="phonenumber" value="Phone number">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="youremail" required value="Email Address">
+                        </div>
+                        <input type="checkbox" id="terms" name="terms" class="terms" required>
+                        <label for="terms"> I agree to dash terms</label><br>
+                        <button type="submit" class="button-send">DRIVE WITH US</button>
+                    </form>
+                    <p class="status">Already applied? <a href="#">Check your application status here</a></p>
+                </div>
+    </main>
+    <footer>
+        <div class="calculator">
+            <h3>See how much you can earn with Dash.</h3>
+            <p>how many hours do you want to drive with us this week?</p>
+            <form action="hours.html" method="get" class="calculate">
+                <div>
+                    <label for="hours"></label>
+                    <input type="text" id="hours" name="hours" value="Hours">
+                </div>
+                <div>
+                    <label for="city"></label>
+                    <input type="text" id="city" name="city" value="City">
+                </div>
+                <button type="submit" class="button-calculate">CALCULATE</button>
+            </form>
+        </div>
+        <div class="icons">
+            <p>
+                <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
