@@ -11,54 +11,59 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="container">
+    <img src="./images/logo/logo.png" alt="logo" class="logo-img">
+    <main class="main-container">
             <div class="header">
-                <img src="./images/logo/logo.png" alt="logo" class="logo-img">
                 <h1>Want to be your own boss?</h1>
                 <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
             </div>
             <img src="./images/bg-image/scooter.svg" alt="scooter" class="main-img">
             <div class="apply-now">
                 <h2>Apply Now</h2>
-                <p>Enter your info below.</p>
-                    <form action="thanks.html" method="get" class="drive">
-                        <div>
+                <p class="mobile-prompt">Enter your info below.</p>
+                <p class="desktop-prompt">Enter your info below to get started.</p>
+                    <form action="applied.html" method="get" class="drive">
+                        <div class="apply-reorder">
                             <label for="firstname"></label>
                             <input type="text" id="firstname" name="firstname" value="First name">
                         </div>
-                        <div>
+                        <div class="apply-reorder">
                             <label for="lastname"></label>
                             <input type="text" id="lastname" name="lastname" value="Last name">
                         </div>
-                        <div>
+                        <div class="phonenumber">
                             <label for="phonenumber"></label>
                             <input type="tel" id="phonenumber" name="phonenumber" value="Phone number">
                         </div>
-                        <div>
+                        <div class="apply-reorder">
                             <label for="email"></label>
                             <input type="email" id="email" name="youremail" required value="Email Address">
                         </div>
-                        <input type="checkbox" id="terms" name="terms" class="terms" required>
-                        <label for="terms"> I agree to dash terms</label><br>
+                        <div class="checkbox">
+                            <input type="checkbox" id="terms" name="terms" class="terms" required>
+                            <label for="terms" class="terms-text"> I agree to dash terms</label><br>
+                        </div>
                         <button type="submit" class="button-send">DRIVE WITH US</button>
                     </form>
                     <p class="status">Already applied? <a href="#">Check your application status here</a></p>
-                </div>
+            </div>
     </main>
     <footer>
         <div class="calculator">
             <h3>See how much you can earn with Dash.</h3>
             <p>how many hours do you want to drive with us this week?</p>
             <form action="hours.html" method="get" class="calculate">
-                <div>
-                    <label for="hours"></label>
-                    <input type="text" id="hours" name="hours" value="Hours">
+                <div class="form-grid">
+                    <div class="hours">
+                        <label for="hours"></label>
+                        <input type="text" id="hours" name="hours" value="Hours">
+                    </div>
+                    <div class="city">
+                        <label for="city"></label>
+                        <input type="text" id="city" name="city" value="City">
+                    </div>
+                    <button type="submit" class="button-calculate">CALCULATE</button>
                 </div>
-                <div>
-                    <label for="city"></label>
-                    <input type="text" id="city" name="city" value="City">
-                </div>
-                <button type="submit" class="button-calculate">CALCULATE</button>
             </form>
         </div>
         <div class="icons">
