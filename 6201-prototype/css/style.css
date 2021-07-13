@@ -1,0 +1,69 @@
+/* Colours:
+#80B571 - mid green for card */
+
+h1 {
+    font-family: "Lato", sans-serif;
+}
+
+h2, a {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+
+nav {
+    background-image: radial-gradient(#2c3444, #212738);
+    height: 310px;
+    width: 100%;
+    box-shadow: 5px 10px 15px rgba(50, 50, 50, .35);
+}
+
+.main-logo {
+
+}
+
+.popular {
+    display: none;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* DESKTOP, NEEDS SORTING */
+
+/* a {
+    text-decoration: none;
+}
+
+nav a, main a {
+    color: white;
+}
+
+.nav-links a, main a {
+    padding: .5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-links a {
+    border: 1.5px solid #EC9C33;
+}
+
+.social-icons a {
+    font-size: 2rem;
+}
+
+.fa-shopping-cart {
+    font-size: 2.5rem;
+}
+
+.card {
+    background-image: url("../images/card.png");
+    background-repeat: no-repeat;
+
+} */
