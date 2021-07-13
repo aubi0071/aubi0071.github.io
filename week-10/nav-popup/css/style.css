@@ -134,7 +134,7 @@ nav {
 
 /* Show popup on hover */
 
-.profile:hover ~ .dropdown {
+.profile:active ~ .dropdown {
     display: block;
 }
 

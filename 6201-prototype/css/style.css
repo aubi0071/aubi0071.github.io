@@ -1,9 +1,8 @@
+/* Sets font styles for site */
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+a {
+    text-decoration: none;
+}
 
 h1 {
     font-family: "Lato", sans-serif;
@@ -13,17 +12,18 @@ h2, a {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
 
 p {
     font-family: "Roboto", sans-serif;
 }
 
-.popular, .nav-links, .social-icons, .dropdown {
+/* Uses display property of 'none' to hide non-mobile assets */
+
+.popular, .nav-links, .social-icons, .dropdown, .card p {
     display: none;
 }
+
+/* creates nav background through radial gradient, box shadow. Applies flex to nav section to allow buttons to appear next to logo */
 
 nav {
     background-image: radial-gradient(#2c3444, #212738);
@@ -34,18 +34,21 @@ nav {
     padding: .5rem 0;
 }
 
+/* Styles nav through font size, colouring */
+
 .fa-bars, .fa-shopping-cart {
     font-size: 2rem;
     color: white;
     padding: .75rem;
 }
 
+/* Makes logo take up entirety of flex container */
+
 .main-logo {
-    width: 70%;
+    width: 100%;
 }
 
-
-
+/* Styles content cards through radial gradient, box shadow; softens corners with border-radius; sets card font colour */
 
 .card, .browse {
     background-image: radial-gradient(#8BC37A, #72A166);
@@ -60,15 +63,14 @@ main h2 {
     padding-top: .5rem;
 }
 
+
 .card a {
     border: 1.5px solid white;  
     padding: .5rem;  
     color: white;
 }
 
-.card p {
-    display: none;
-}
+/* Applies grid to first card to allow image to appear next to text/link */
 
 .card {
     display: grid;
@@ -90,17 +92,17 @@ main h2 {
     grid-column: 2 / 3;
 }
 
+/* Sets main images to fit their containers through width property */
+
 .main-img {
     width: 100%;
 }
-
-
 
 .browse img {
     width: 100%;
 }
 
-/* ================================= */
+/* Styles Social section by centering text, reducing embeded content frame size with margin */
 
 .social h1 {
     text-align: center;
@@ -110,7 +112,7 @@ main h2 {
     margin: 0 2rem 2rem 2rem;
 }
 
-/* ================================= */
+/* styles footer elements: link to top, dividing line is styled with border properties; text is aligned and margins are set */
 
 .footer-line {
     border: 1px solid #171D2A;
@@ -130,6 +132,19 @@ footer a {
     padding: .5rem;  
     color: black;
 }
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablet Styles */
+
+@media screen and (min-width: 768px) {
+
+    .fa-bars, .browse {
+        display: none;
+    }
+
+}
+
 
 /* DESKTOP, NEEDS SORTING */
 
