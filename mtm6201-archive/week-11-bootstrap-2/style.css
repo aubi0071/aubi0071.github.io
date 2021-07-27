@@ -1,0 +1,25 @@
+body {
+    background-color: #369;
+}
+
+.container {
+    background-color: white;
+}
+
+.col, [class^="col-"] {
+    background-color: #ccc;
+}
+
+/* I NEED to start using these variables!! vvv */
+.testimonial [class^="col-"] {
+    background-color: tomato;
+    text-align: center;
+}
+
+.products {
+    background-color: bisque;
+}
+
+.rounded {
+    border-radius: 5px;
+}
