@@ -10,7 +10,9 @@
 
     <title>Bootstrap This!</title>
   </head>
+
   <body>
+    <!-- Nav Bar, styled by using bg-success/navbar-dark to make the background green/font colour white-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
         <div class="container-fluid">
           <a class="navbar-brand ps-3" href="#">Zak's Bootstrap This!</a>
@@ -42,39 +44,47 @@
           </div>
         </div>
       </nav>
+
+      <!-- List of things I need for the site. Text gets crossed out through text decoration BS classes as I finish them. Note the container to fit everything on the site to the same size -->
       <div class="container mt-3">
         <h1 class="mt-5 mb-5">Welcome to my Bootstrap Site!</h1>
-        <h2>Things I Need</h2>
+        <h2 class="text-decoration-line-through">Things I Need<span class="badge rounded-pill bg-danger mx-2 fs-6">We're done!</span></h2>
         <hr>
         <ul>
-            <li>CONTENT</li>
+            <li class="text-decoration-line-through">CONTENT</li>
             <li class="text-decoration-line-through">Grid</li>
             <li class="text-decoration-line-through">Nav</li>
-            <li>addt'l components (buttons, cards, whatever)</li>
-            <li>reponisveness</li>
+            <li class="text-decoration-line-through">addt'l components (buttons, cards, whatever)</li>
+            <li class="text-decoration-line-through">reponisveness</li>
+            <li class="text-decoration-line-through">code comments</li>
         </ul>
     </div>
 
+    <!-- Uses BS Grid to align columns in different viewport widths. Again, inside a containter for sizing. The last p (Pill Badges) has a padding class on it to distance it from the pill -->
     <div class="container">
         <h2>About (Parts of) Bootstrap</h2>
         <hr>
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <h3>Grid</h3>
-            <p>Bootstrap Grid is like CSS Flex, but it's so much easier to use (especially when you're building responsive sites)! You just add classes to specify how you want your content to look and BAM! It looks good! Who wouldn't want to use that?</p>
+            <p>Bootstrap Grid is like CSS Flex, but it's so much easier to use (especially when you're building responsive sites)! You just add classes to specify how you want your content to look using classes like "sm" "md" and "lg" for viewport widths and then how much of the screen you want that element to take up and BAM! It looks good! Who wouldn't want to use that?</p>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos officiis dolores odit culpa dolor iusto voluptates obcaecati labore molestias! Esse a expedita dolore rerum libero facilis iste dolores incidunt voluptate.</p>
+            <h3>Carousels</h3>
+            <p>To be honest, I don't have ANY idea how I would go about coding this so I think Bootstrap will be an asset going forward. I'm assuming there's JS involved but I can't really make sense of it. Luckily, the default code on the bootstrap site is easy to get going--you just throw your img links in and it automatically works! The only thing I still have to work out is how to make images with different aspect ratios work...
+              <br><br>
+            I chose to have captions on my carousel as I want to use it in my portfolio site, but it's super easy to hide captions on smaller screens by, once again, just adding a class (in this case the class is d-none, which is the bootsrap version of CSS' display: none), and then a d-md-block (display: block at medium viewport width).
+            </p>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
             <h3 class="mb-0">Pill Badges</h3>
             <span class="badge rounded-pill bg-info">Like This!</span>
-            <p class="pt-3">They're super easy to do but I do really like the way they look. There's not much to talk about though (it's just giving your span a class of badge then styling it to look cool).</p>
+            <p class="pt-3">They're super easy to do but I do really like the way they look. There's not much to talk about though (it's just giving your span a class of badge then styling it with the same color class names as the rest of Bootstrap to look cool).</p>
           </div>
         </div>
       </div>
 
+    <!-- Silly button exercise, styled using BS classes and in a container with a margin-top applied to leave space. Lines generated with <hr> -->
     <div class="container mt-3">
         <h2>What do the Button?</h2>
         <hr>
@@ -92,6 +102,7 @@
         </div>
     </div>
 
+    <!-- The container here has margin-top and -bottom set to leave space between other sections -->
     <div class="container mt-3 mb-3">
         <h2>Carousel for my own practice!</h2>
         <hr>
