@@ -45,8 +45,50 @@
         </div>
       </nav>
 
-      <!-- List of things I need for the site. Text gets crossed out through text decoration BS classes as I finish them. Note the container to fit everything on the site to the same size -->
-      <div class="container mt-3">
+    <!-- container set around the carousel to keep spacing consistent, margin-top to push it from the nav bar -->
+    <div class="container mt-5">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./images/dog-web.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>I'm going to use this carousel on my own site, I think</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="./images/girl-2-web.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>So I just wanted to get it in here to practice</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="./images/girl-web.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>It is REALLY not hard to use!</p>
+              </div>
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+      </div>  
+    </div>
+
+      <!-- List of things I need for the site. Text gets crossed out through text decoration BS classes as I finish them. Disapears at smaller viewports with d-none/d-lg-block because no one really needs to see this. Container class to keep it in line with other content -->
+      <div class="container mt-3 d-none d-lg-block">
         <h1 class="mt-5 mb-5">Welcome to my Bootstrap Site!</h1>
         <h2 class="text-decoration-line-through">Things I Need<span class="badge rounded-pill bg-danger mx-2 fs-6">We're done!</span></h2>
         <hr>
@@ -61,7 +103,7 @@
     </div>
 
     <!-- Uses BS Grid to align columns in different viewport widths. Again, inside a containter for sizing. The last p (Pill Badges) has a padding class on it to distance it from the pill -->
-    <div class="container">
+    <div class="container mt-3">
         <h2>About (Parts of) Bootstrap</h2>
         <hr>
         <div class="row">
@@ -70,22 +112,22 @@
             <p>Bootstrap Grid is like CSS Flex, but it's so much easier to use (especially when you're building responsive sites)! You just add classes to specify how you want your content to look using classes like "sm" "md" and "lg" for viewport widths and then how much of the screen you want that element to take up and BAM! It looks good! Who wouldn't want to use that?</p>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
+            <h3 class="mb-0">Pill Badges</h3>
+            <span class="badge rounded-pill bg-info">Like This!</span>
+            <p class="pt-3">They're super easy to do but I do really like the way they look. There's not much to talk about though (it's just giving your span a class of badge then styling it with the same color class names as the rest of Bootstrap to look cool).</p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4">
             <h3>Carousels</h3>
             <p>To be honest, I don't have ANY idea how I would go about coding this so I think Bootstrap will be an asset going forward. I'm assuming there's JS involved but I can't really make sense of it. Luckily, the default code on the bootstrap site is easy to get going--you just throw your img links in and it automatically works! The only thing I still have to work out is how to make images with different aspect ratios work...
               <br><br>
             I chose to have captions on my carousel as I want to use it in my portfolio site, but it's super easy to hide captions on smaller screens by, once again, just adding a class (in this case the class is d-none, which is the bootsrap version of CSS' display: none), and then a d-md-block (display: block at medium viewport width).
             </p>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <h3 class="mb-0">Pill Badges</h3>
-            <span class="badge rounded-pill bg-info">Like This!</span>
-            <p class="pt-3">They're super easy to do but I do really like the way they look. There's not much to talk about though (it's just giving your span a class of badge then styling it with the same color class names as the rest of Bootstrap to look cool).</p>
-          </div>
         </div>
       </div>
 
-    <!-- Silly button exercise, styled using BS classes and in a container with a margin-top applied to leave space. Lines generated with <hr> -->
-    <div class="container mt-3">
+    <!-- Silly button exercise, styled using BS classes and in a container with margin applied to leave space between other sections/not have the site end right after the button. Lines generated with <hr> -->
+    <div class="container mt-3 mb-5">
         <h2>What do the Button?</h2>
         <hr>
         <div class="btn-group">
@@ -101,52 +143,6 @@
             </ul>
         </div>
     </div>
-
-    <!-- The container here has margin-top and -bottom set to leave space between other sections -->
-    <div class="container mt-3 mb-3">
-        <h2>Carousel for my own practice!</h2>
-        <hr>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./images/dog-web.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>I'm going to use this carousel on my own site, I think</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/girl-2-web.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>So I just wanted to get it in here to practice</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/girl-web.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>It is REALLY not hard to use!</p>
-                </div>
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>  
-    </div>
-
-
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
