@@ -51,6 +51,73 @@ nav {
     color: var(--off-black);
 }
 
+/***************Mobile Menu***************/
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {    
+    display: none;
+    background-color: var(--red-accent);
+    border-radius: 10px;
+    filter: drop-shadow(0 .2rem .4rem rgba(0, 0, 0, .16));
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: var(--off-white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav .sans-serif {
+    color: var(--off-white);
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*  */
+
+.topnav i {
+    font-size: 1.8rem;
+}
+
+.topnav a:hover {
+    color: var(--off-black);
+}
+
+.fa-bars {
+    color: var(--off-black);
+    width: 1.8rem;
+    padding-top: 60%;
+}
+
+
+
+/* Style the active link (or home/logo) */
+.active {
+    color: white;
+}
+
+#divider {
+    margin: 0 auto;
+    width: 80%;
+    height: 1.5px;
+}  
+
 /* ----------FOOTER------------ */
 
 /* footer {
@@ -105,14 +172,62 @@ footer, footer a {
     height: 0;
   }
 
-/* Tablet Styles */
+/* _______________MEDIA QUERIES_______________ */
 
-/* 
+/*==========Tablet Styles=============*/
 
-nav, footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 768px) {
+
+
+    main, footer {
+        padding: 1.1rem 2.5rem;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .mobile-hide, footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1.25rem;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        order: -1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .out-links, .footer-nav {
+        flex-grow: 1;
+    }
+
+    .break {
+        display: none;
+    }
 }
 
-*/
+/*=============Desktop Styles============*/
+
+@media screen and (min-width: 1280px) {
+
+    main, footer {
+        padding: 1.1rem 3.75rem;
+    }    
+
+    nav a {
+        font-size: 1.56rem;
+    }
+
+    footer {
+        font-size: 1.062rem;
+    }
+
+
+}
