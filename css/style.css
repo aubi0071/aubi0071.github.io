@@ -20,17 +20,19 @@ body a {
 
 h2 {
     font-size: 1.625rem;
+    font-weight: bold;
 }
 
-/* ---------NAVBAR----------- */
-
-body {
+.body {
     background-color: var(--off-white);
 }
 
 main, footer {
     padding: 1.1rem 1.5rem;
 }
+
+/* ---------NAVBAR----------- */
+
 
 .wordmark-active {
     fill: var(--red-accent);
@@ -48,7 +50,7 @@ main, footer {
     color: var(--red-accent);
 }
 
-.mobile-hide {
+.mobile-hide, .img-md, .img-lg {
     display: none;
 }
 
@@ -142,10 +144,18 @@ img {
 
 .img-main {
     margin-top: .5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ---------MAIN CONTENT----------- */
+
+.img-lg, .img-md {
+    display: none;
+}
+
+.img-sm {
+    display: block;
+}
 
 .img-container {
     position: relative;
@@ -154,19 +164,18 @@ img {
 .img-container a {
     text-decoration: underline;
     color: var(--off-white);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .txt-overlay p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 1.5rem;
 }
 
 .txt-overlay h2 {
     padding-bottom: 1rem;
 }
-
 
 .txt-overlay .p-small {
     display: block;
@@ -176,12 +185,11 @@ img {
 
 .txt-overlay {
     background-color: rgba(0, 0, 0, .69);
+    border-radius: 0 0 10px 10px;
     color: var(--off-white);
-    padding: 3.56rem 6.125rem 1.625rem 6.125rem;
-    width: 50%;
-    float: right;
-    right: 0;
-    top: 15%;
+    padding: 1.75rem 1rem 1.4rem 1rem;
+    width: 100%;
+    bottom: 0;
     position: absolute;
 }
 
@@ -192,10 +200,6 @@ img {
 footer {
     display: grid;
     grid-template-rows: 2fr, 1fr, 1fr;
-    /* position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;                                          DISABLED FOR NOW, PUT BACK!!*/
 }
 
 .out-links {
@@ -238,18 +242,76 @@ footer, footer a {
     height: 0;
   }
 
-/* _______________MEDIA QUERIES_______________ */
+/* _______________________________MEDIA QUERIES_______________________________ */
 
 /*==========Tablet Styles=============*/
 
 @media screen and (min-width: 768px) {
 
+    .img-main {
+        margin-top: .5rem;
+        margin-bottom: 10rem;
+    }
+
+    /* RESIZES MAIN TEXT OVERLAY */
+
+    .img-md {
+        display: block;
+    }
+
+    .img-container {
+        position: relative;
+    }
+    
+    .img-container a {
+        text-decoration: underline;
+        color: var(--off-white);
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .txt-overlay p {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .txt-overlay h2 {
+        padding-bottom: 1rem;
+    }
+    
+    .txt-overlay .p-small {
+        display: block;
+        padding: 1.625rem 0 0 0;
+        font-size: .625rem;    
+    }
+    
+    .txt-overlay {
+        background-color: rgba(0, 0, 0, .69);
+        color: var(--off-white);
+        padding: 1.5rem;
+        width: 62.5%;
+        float: right;
+        right: 0;
+        top: 15%;
+        bottom: initial;
+        position: absolute;
+        border-radius: 0px;
+    }
+
+    /* END TEXT OVERLAY---------------------------------------- */
 
     main, footer {
         padding: 1.1rem 2.5rem;
     }
 
-    .topnav {
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .topnav, .img-sm {
         display: none;
     }
 
@@ -293,6 +355,53 @@ footer, footer a {
 
     footer {
         font-size: 1.062rem;
+    }
+
+    /* RESIZES MAIN TEXT OVERLAY */
+
+    .img-sm, .img-md {
+        display: none;
+    }
+
+    .img-lg {
+        display: block;
+    }
+
+    .img-container {
+        position: relative;
+    }
+    
+    .img-container a {
+        text-decoration: underline;
+        color: var(--off-white);
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .txt-overlay p {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .txt-overlay h2 {
+        padding-bottom: 1rem;
+    }
+    
+    .txt-overlay .p-small {
+        display: block;
+        padding: 1.625rem 0 0 0;
+        font-size: .625rem;    
+    }
+    
+    .txt-overlay {
+        background-color: rgba(0, 0, 0, .69);
+        color: var(--off-white);
+        padding: 3.56rem 6.125rem 1.625rem 6.125rem;
+        width: 50%;
+        float: right;
+        right: 0;
+        top: 15%;
+        position: absolute;
     }
 
 
