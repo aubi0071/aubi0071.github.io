@@ -34,8 +34,14 @@ main, footer {
     width: 160px;
 }
 
-.nav-active {
-    fill: var(--red-accent);
+.wordmark {
+    fill: var(--off-black);
+    display: inline-block;
+    width: 160px;
+}
+
+.nav-links .nav-active {
+    color: var(--red-accent);
 }
 
 .mobile-hide {
@@ -112,7 +118,7 @@ nav {
     color: white;
 }
 
-#divider {
+#divider, #divider-2, #divider-3 {
     margin: 0 auto;
     width: 80%;
     height: 1.5px;
