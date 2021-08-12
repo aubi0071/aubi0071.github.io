@@ -2,8 +2,25 @@
     --off-black: #2e2e2e;
     --off-white: #FFFEFC;
     --red-accent: #e87070;
+    --light-grey: #C4C4C4;
 }
 
+
+.off-black {
+    color: var(--off-black)
+}
+
+.light-grey {
+    color: var(--light-grey);
+}
+
+.off-white {
+    color: var(--off-white);
+}
+
+.bold {
+    font-weight: bold;
+}
 
 .serif {
     font-family: 'Noto Serif', serif;
@@ -14,11 +31,15 @@
     text-transform: uppercase;
 }
 
+.ss-lc {
+    font-family: 'Roboto', sans-serif;
+}
+
 body a {
     text-decoration: none;
 }
 
-h2 {
+main h2 {
     font-size: 1.625rem;
     font-weight: bold;
 }
@@ -29,6 +50,43 @@ h2 {
 
 main, footer {
     padding: 1.1rem 1.5rem;
+}
+
+/* Contact Page */
+
+select {
+    appearance: none;
+    color: var(--off-black);
+}
+
+label {
+    padding: .5rem 0 .25rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    border: 2px solid var(--light-grey);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-placeholder {
+    padding: .5rem 1rem;
+}
+
+.send-btn {
+    font-size: 1.56rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+    margin-bottom: 2.875rem;
+}
+
+.message {
+    height: 300px;
+    resize: none;
+    position: relative;
+    top: 0;
 }
 
 /* ---------NAVBAR----------- */
@@ -248,12 +306,16 @@ footer, footer a {
 
 @media screen and (min-width: 768px) {
 
+    .topnav, .img-sm, .txt-container .img-about-lg {
+        display: none;
+    }
+
     .img-main {
         margin-top: .5rem;
         margin-bottom: 10rem;
     }
 
-    /* RESIZES MAIN TEXT OVERLAY */
+    /* RESIZES HOME TEXT IMG OVERLAY */
 
     .img-md {
         display: block;
@@ -298,21 +360,73 @@ footer, footer a {
         border-radius: 0px;
     }
 
-    /* END TEXT OVERLAY---------------------------------------- */
+    /* RESTYLES CONTACT PAGE CONTENT */
+    
+    .txt-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 1rem;
+    }
+    
+    .txt-container h2 {
+        text-align: center;
+        font-size: 1.875rem;
+        padding: 1.1rem;
+        grid-area: 1 / 1 / 2 / 4;
+    }
 
     main, footer {
         padding: 1.1rem 2.5rem;
     }
+
+    .img-about-md {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .txt-grid {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: auto;
+        column-gap: 1rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .div-name {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div-email {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div-method {
+        grid-area: 1 / 3 / 2 / 5;
+    }
+
+    .div-ideas {
+        grid-area: 2 / 1 / 3 / 5; 
+    }
+
+    .message {
+        height: 132px;
+    }
+
+    .send-btn {
+        grid-area: 3 / 1 / 4 / 5;
+    }
+
+    /* RESTYLES FOOTER */
 
     footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-    }
-
-    .topnav, .img-sm {
-        display: none;
     }
 
     .mobile-hide, footer {
@@ -359,7 +473,7 @@ footer, footer a {
 
     /* RESIZES MAIN TEXT OVERLAY */
 
-    .img-sm, .img-md {
+    .img-sm, .img-md, .img-about-md {
         display: none;
     }
 
@@ -367,45 +481,71 @@ footer, footer a {
         display: block;
     }
 
-    .img-container {
-        position: relative;
-    }
-    
     .img-container a {
-        text-decoration: underline;
-        color: var(--off-white);
         font-size: 1.25rem;
-        font-weight: bold;
     }
     
     .txt-overlay p {
         font-size: 1.2rem;
-        padding-bottom: 1.5rem;
-    }
-    
-    .txt-overlay h2 {
-        padding-bottom: 1rem;
-    }
-    
-    .txt-overlay .p-small {
-        display: block;
-        padding: 1.625rem 0 0 0;
-        font-size: .625rem;    
-    }
+    }       
     
     .txt-overlay {
-        background-color: rgba(0, 0, 0, .69);
-        color: var(--off-white);
         padding: 3.56rem 6.125rem 1.625rem 6.125rem;
         width: 50%;
-        float: right;
-        right: 0;
-        top: 15%;
-        position: absolute;
     }
 
+    /* RESTYLES CONTACT PAGE */
 
+    .txt-container {
+        padding-top: .5rem;
+    }
+
+    .txt-container h2{
+        padding: 0;
+        text-align: left;
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .txt-grid {
+        font-size: 1.22rem;
+        grid-area: 2 / 2 / 2 / 4;
+        line-height: 37px;
+    }
+
+    .txt-container .img-about-lg {
+        display: block;
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .form-container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: .375rem;
+    }
+
+    .div-name {
+        grid-area: 1 / 1 / 2 / 6;
+    }
+
+    .div-email {
+        grid-area: 2 / 1 / 3 / 6;
+    }
+
+    .div-method {
+        grid-area: 3 / 1 / 4 / 6;
+    }
+
+    .div-ideas {
+        grid-area: 1 / 6 / 4 / 13;
+    }
+
+    .message {
+        height: 84.6%;
+    }
+
+    .send-btn {
+        grid-area: 4 / 1 / 5 / 13;
+    }
 }
 
 
-/* I need a breakpoint for 1191px to fix text-wrap issues on the txt-olverlay */
