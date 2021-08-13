@@ -5,7 +5,6 @@
     --light-grey: #C4C4C4;
 }
 
-
 .off-black {
     color: var(--off-black)
 }
@@ -66,8 +65,16 @@ main h2 {
     background-color: var(--off-white);
 }
 
-main, footer {
+nav {
+    padding: 1.1 1.5rem 0 1.5rem;
+} 
+
+footer {
     padding: 1.1rem 1.5rem;
+}
+
+main {
+    padding: 0 1.5rem;
 }
 
 /* Styles Image/Content Grid */
@@ -84,7 +91,7 @@ main, footer {
 }
 
 /* image overlays */
-#overlay {
+#overlay, #overlay1 {
     position: fixed;
     display: none;
     width: 100%;
@@ -197,11 +204,14 @@ nav {
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {    
+    .topnav #myLinks { 
     display: none;
     background-color: var(--red-accent);
     border-radius: 10px;
+    width: 87.2%;
+    margin: auto;
     filter: drop-shadow(0 .2rem .4rem rgba(0, 0, 0, .16));
+    margin-bottom: 1rem;
 }
 
 /* Style navigation menu links */
@@ -254,10 +264,6 @@ nav {
     width: 80%;
     height: 1.5px;
 }  
-
-.pg-end-md {
-    margin-bottom: 8rem;
-}
 
 /* ---------IMAGES------------ */
 
@@ -378,6 +384,18 @@ footer, footer a {
 
 @media screen and (min-width: 768px) {
 
+    nav {
+        padding: 1.1rem 2.5rem 0 2.5rem;
+    }
+
+    footer {
+        padding: 1.1rem 2.5rem;
+    }
+
+    main {
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
     .topnav, .img-sm, .txt-container .img-about-lg {
         display: none;
     }
@@ -387,8 +405,8 @@ footer, footer a {
         margin-bottom: 10rem;
     }
 
-    .pg-end-lg {
-        margin-bottom: 10rem;
+    .pg-end-md {
+        margin-bottom: 8rem;
     }
 
     /* RESIZES HOME TEXT IMG OVERLAY */
@@ -442,6 +460,10 @@ footer, footer a {
         font-size: 1.125rem;
     }
 
+    .back-btn {
+        font-size: 1.25rem;
+    }
+
     /* RESTYLES CONTACT PAGE CONTENT */
     
     .txt-container {
@@ -456,10 +478,6 @@ footer, footer a {
         font-size: 1.875rem;
         padding: 1.1rem;
         grid-area: 1 / 1 / 2 / 4;
-    }
-
-    main, footer {
-        padding: 1.1rem 2.5rem;
     }
 
     .img-about-md {
@@ -541,9 +559,17 @@ footer, footer a {
 
 @media screen and (min-width: 1280px) {
 
-    main, footer {
+    nav {
+        padding: 1.1rem 3.75rem 0 3.75rem;
+    }
+
+    footer {
         padding: 1.1rem 3.75rem;
     }    
+
+    main {
+        padding: 0 3.75rem;
+    }
 
     nav a {
         font-size: 1.56rem;
@@ -551,6 +577,10 @@ footer, footer a {
 
     footer {
         font-size: 1.062rem;
+    }
+
+    .pg-end-lg {
+        margin-bottom: 10rem;
     }
 
     /* RESIZES MAIN TEXT OVERLAY */
@@ -580,6 +610,10 @@ footer, footer a {
 
     .prompt {
         font-size: 1.25rem;
+    }
+
+    .back-btn {
+        font-size: 1.375rem;
     }
 
     /* RESTYLES IMAGE GRIDS */

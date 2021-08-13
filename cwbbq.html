@@ -11,9 +11,8 @@
     <!-- Links custom stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Imports iconsets -->
+    <!-- Imports icon for hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/62fc22c377.js" crossorigin="anonymous"></script>
     
     <!-- Links Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -95,8 +94,8 @@
                 </g>
             </svg>
         </a>
-        <a href="./camerawork.html">Camerawork</a>
-        <a href="./design.html" class="nav-active">Design</a>
+        <a href="./camerawork.html" class="nav-active">Camerawork</a>
+        <a href="./design.html">Design</a>
         <a href="./music.html">Music</a>
         <a href="./contact.html">Contact</a>
     </nav>
@@ -182,190 +181,66 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <main>
-<!-- Archiving this in case i need reference
-        <div class="grid-container mt">
-            <div class="img-grid">
-                <img src="./images/ex-ux@2x.png" onclick="on()" class="img-rounded" alt="">
-                    <div id="overlay">
-                        <div id="carouselExampleIndicators" class="carousel slide popup" data-bs-ride="carousel">
-                            <span onclick="off()"><i class="fas fa-times"></i></span>
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            <div class="img-grid">
-                <img src="./images/ex-web@2x.png" onclick="on()" class="img-rounded" alt="">
-                    <div id="overlay1">
-                        <button onclick="off()">X</button>
-                        <div id="carouselExampleIndicators" class="carousel slide popup" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            <div class="img-grid">
-                <img src="./images/ex-illustrator@2x.png" onclick="on()" class="img-rounded" alt="">
-                    <div id="overlay">
-                        <button onclick="off()">X</button>
-                        <div id="carouselExampleIndicators" class="carousel slide popup" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            <div class="img-grid">
-                <img src="./images/ex-illustrator-2@2x.png" onclick="on()" class="img-rounded" alt="">
-                    <div id="overlay">
-                        <button onclick="off()">X</button>
-                        <div id="carouselExampleIndicators" class="carousel slide popup" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            <div class="img-grid">
-                <img src="./images/ex-poster@2x.png" onclick="on()" class="img-rounded" alt="">
-                    <div id="overlay">
-                        <button onclick="off()">X</button>
-                        <div id="carouselExampleIndicators" class="carousel slide popup" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/about-img-1280.png" class="d-block w-100" alt="...">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-            </div>
-        </div> -->
-        
-        <!-- HERE IS THE NEW ONE  -->
-        <div class="grid-container mt">
-            <a href="cwbbq.html" class="img-grid">
-                <img src="./images/ex-ux@2x.png" alt="" class="img-rounded">
-            </a>
-            <a href="" class="img-grid">
-                <img src="./images/ex-web@2x.png" alt="" class="img-rounded">
-            </a>
-            <a href="" class="img-grid">
-                <img src="./images/ex-illustrator-2@2x.png" alt="" class="img-rounded">
-            </a>
-            <a href="" class="img-grid">
-                <img src="./images/ex-illustrator@2x.png" alt="" class="img-rounded">
-            </a>
-            <a href="" class="img-grid">
-                <img src="./images/ex-poster@2x.png" alt="" class="img-rounded">
-            </a>
+    <div id="carouselExampleIndicators" class="carousel slide mt" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
         </div>
-        <p class="light-grey serif pg-end-sm pg-end-md pg-end-lg center prompt">Click on any thumbnail to read more</p>
+        <div class="carousel-inner img-rounded">
+          <div class="carousel-item active">
+            <img src="./images/cwbbq-01.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-02.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-03.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-04.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-05.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-06.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-07.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-08.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-09.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/cwbbq-10.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="serif off-black mt pg-end-sm pg-end-md pg-end-lg">
+        <h2 class="center">Cornwall BBQ</h2>
+        <p>Our assignment was to find a website that needed redesigning and, through market research, develop a pointed solution that reached beyond simply updating aesthetics.</p>
+        <span onclick="goBack()" class="bold back-btn">&#x3c; Go Back</button>       
+    </div>
+    <main>
     </main>
         <footer>
             <div class="copyright serif">&copy; Zak Aubin 2021</div>
@@ -389,23 +264,18 @@
     <script>
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
     function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                    x.style.display = "block";
-                }
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
     }
     </script>
-    <!-- JS for overlay -->
-    <!-- **********************IM NOT ACTUALLY USING THIS ANYMORE***************** -->
+    <!-- Back button for portfolio pages -->
     <script>
-        function on() {
-          document.getElementById("overlay").style.display = "block";
-        }
-        
-        function off() {
-          document.getElementById("overlay").style.display = "none";
+        function goBack() {
+          window.history.back();
         }
     </script>
 </body>
