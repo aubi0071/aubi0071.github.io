@@ -1,9 +1,13 @@
+/* Defines page colours */
+
 :root {
     --off-black: #2e2e2e;
     --off-white: #FFFEFC;
     --red-accent: #e87070;
     --light-grey: #C4C4C4;
 }
+
+/* Uses classes to quickly style site (a la Bootsrap) */
 
 .off-black {
     color: var(--off-black)
@@ -38,6 +42,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.img-rounded {
+    border-radius: 10px;
+}
+
 .btn-no-style {
     border: none;
     color: rgba(0, 0, 0, 0);
@@ -64,21 +72,11 @@
     max-width: 648px;
 }
 
-.youtube {
-    position: relative;
-    padding-bottom: 56.25%;
-}
-
 .underline {
     text-decoration: underline;
 }
 
-iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+/* ========================================ENTIRE SITE STYLES======================================== */
 
 body a {
     text-decoration: none;
@@ -89,6 +87,7 @@ main h2 {
     font-weight: bold;
 }
 
+/* Needed to be a class of body to override normalize */
 .body {
     background-color: var(--off-white);
 }
@@ -105,115 +104,7 @@ main {
     padding: 0 1.5rem;
 }
 
-/* Styles Main Page Grids */
-
-.grid-container {
-    display: grid;
-    row-gap: .625rem;
-    column-gap: .625rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.img-grid:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 3;
-}
-
-.camerawork-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    row-gap: .625rem;
-    column-gap: .625rem;
-}
-
-.music-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: .625rem;
-    column-gap: .625rem;
-}
-
-.music-txt {
-    grid-column: 2 / 5;
-    font-size: 1.0625rem;
-    line-height: .25rem;
-    align-self: center;
-}
-
-/* image overlays */
-#overlay, #overlay1 {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-}
-
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    max-width: 944px;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-
-.fa-times {
-    color: var(--off-white);
-    font-size: 2rem;
-    position: absolute;
-    top: 2.5%;
-    right: 2.5%;
-    z-index: 99;
-}
-
-/* Contact Page */
-
-select {
-    appearance: none;
-    color: var(--off-black);
-}
-
-label {
-    padding: .5rem 0 .25rem 0;
-}
-
-input, select, textarea {
-    width: 100%;
-    border: 2px solid var(--light-grey);
-    border-radius: 10px;
-    background-color: white;
-}
-
-.form-placeholder {
-    padding: .5rem 1rem;
-}
-
-.send-btn {
-    font-size: 1.56rem;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    text-decoration: underline;
-    margin-bottom: 2.875rem;
-}
-
-.message {
-    height: 300px;
-    resize: none;
-    position: relative;
-    top: 0;
-}
-
-/* ---------NAVBAR----------- */
+/* ========================================NAVBAR======================================== */
 
 
 .wordmark-active {
@@ -247,14 +138,12 @@ nav {
 
 /***************Mobile Menu***************/
 
-/* Style the navigation menu */
 .topnav {
     overflow: hidden;
     position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks { 
+.topnav #myLinks { 
     display: none;
     background-color: var(--red-accent);
     border-radius: 10px;
@@ -264,7 +153,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-/* Style navigation menu links */
 .topnav a {
     color: var(--off-white);
     padding: 14px 16px;
@@ -278,15 +166,12 @@ nav {
     color: var(--off-white);
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
-
-/*  */
 
 .topnav i {
     font-size: 1.8rem;
@@ -302,9 +187,6 @@ nav {
     padding-top: 60%;
 }
 
-
-
-/* Style the active link (or home/logo) */
 .active {
     color: white;
 }
@@ -313,27 +195,10 @@ nav {
     margin: 0 auto;
     width: 80%;
     height: 1.5px;
-}  
-
-/* ---------IMAGES------------ */
-
-img {
-    display: block;
-    width: 100%;
-    height: auto; 
-  }
-
-.img-rounded {
-    border-radius: 10px;
-}
-
-.img-main {
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-}
+} 
 
 
-/* ---------MAIN CONTENT----------- */
+/* ========================================MAIN PAGE======================================== */
 
 .img-lg, .img-md {
     display: none;
@@ -379,8 +244,107 @@ img {
     position: absolute;
 }
 
-/* ----------FOOTER------------ */
+/* ========================================CAMERAWORK PAGE======================================== */
+/* Fixes YouTube Link Styling by making the iframe full sized inside of a youtube container  */
 
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========================================CONTACT PAGE======================================== */
+
+select {
+    appearance: none;
+    color: var(--off-black);
+}
+
+label {
+    padding: .5rem 0 .25rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    border: 2px solid var(--light-grey);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-placeholder {
+    padding: .5rem 1rem;
+}
+
+.send-btn {
+    font-size: 1.56rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+    margin-bottom: 2.875rem;
+}
+
+.message {
+    height: 300px;
+    resize: none;
+    position: relative;
+    top: 0;
+} 
+
+/* ========================================IMAGE STYLES======================================== */
+
+img {
+    display: block;
+    width: 100%;
+    height: auto; 
+  }
+
+.img-main {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================GRID STYLES======================================== */
+
+.grid-container {
+    display: grid;
+    row-gap: .625rem;
+    column-gap: .625rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-grid:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.camerawork-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: .625rem;
+    column-gap: .625rem;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: .625rem;
+    column-gap: .625rem;
+}
+
+.music-txt {
+    grid-column: 2 / 5;
+    font-size: 1.0625rem;
+    line-height: .25rem;
+    align-self: center;
+}
+
+/* ========================================FOOTER STYLES======================================== */
 
 footer {
     display: grid;
@@ -427,9 +391,9 @@ footer, footer a {
     height: 0;
   }
 
-/* _______________________________MEDIA QUERIES_______________________________ */
+/* ++++++++++++++++++++++++++++++++++++++++MEDIA QUERIES++++++++++++++++++++++++++++++++++++++++ */
 
-/*==========Tablet Styles=============*/
+/* ========================================Tablet Styles======================================== */
 
 @media screen and (min-width: 768px) {
 
@@ -466,7 +430,7 @@ footer, footer a {
         font-size: 1.75rem;
     }
 
-    /* RESIZES HOME TEXT IMG OVERLAY */
+    /* =========RESIZES HOME TEXT IMG OVERLAY========= */
 
     .img-md {
         display: block;
@@ -511,7 +475,7 @@ footer, footer a {
         border-radius: 0px;
     }
 
-    /* RESTYLES TEXT */
+    /* =========RESTYLES TEXT========= */
 
     .prompt {
         font-size: 1.125rem;
@@ -522,7 +486,7 @@ footer, footer a {
         text-decoration: underline;
     }
 
-    /* RESTYLES MUSIC PAGE CONTENT */
+    /* =========RESTYLES MUSIC PAGE CONTENT========= */
 
     .music-grid {
         grid-template-columns: repeat(8, 1fr);
@@ -543,7 +507,7 @@ footer, footer a {
         grid-column: 6 / 9;
     }
 
-    /* RESTYLES CONTACT PAGE CONTENT */
+    /* =========RESTYLES CONTACT PAGE CONTENT========= */
     
     .txt-container {
         display: grid;
@@ -599,7 +563,7 @@ footer, footer a {
         grid-area: 3 / 1 / 4 / 5;
     }
 
-    /* RESTYLES FOOTER */
+    /* =========RESTYLES FOOTER========= */
 
     footer {
         position: fixed;
@@ -634,7 +598,7 @@ footer, footer a {
     }
 }
 
-/*=============Desktop Styles============*/
+/* ========================================Desktop Styles======================================== */
 
 @media screen and (min-width: 1280px) {
 
@@ -662,7 +626,7 @@ footer, footer a {
         margin-bottom: 10rem;
     }
 
-    /* RESIZES MAIN TEXT OVERLAY */
+    /* =========RESIZES MAIN TEXT OVERLAY========= */
 
     .img-sm, .img-md, .img-about-md {
         display: none;
@@ -685,7 +649,7 @@ footer, footer a {
         width: 50%;
     }
 
-    /* RESIZES TEXT */
+    /* =========RESIZES TEXT========= */
 
     .prompt {
         font-size: 1.25rem;
@@ -695,7 +659,7 @@ footer, footer a {
         font-size: 1.375rem;
     }
 
-    /* RESTYLES MUSIC GRID */
+    /* =========RESTYLES MUSIC GRID========= */
 
     .music-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -721,7 +685,7 @@ footer, footer a {
         filter: drop-shadow(0 .2rem .4rem rgba(0, 0, 0, .16));
     }
 
-    /* RESTYLES IMAGE GRIDS */
+    /* =========RESTYLES IMAGE GRIDS========= */
 
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
@@ -739,7 +703,7 @@ footer, footer a {
         row-gap: 1rem;
     }
 
-    /* RESTYLES CONTACT PAGE */
+    /* =========RESTYLES CONTACT PAGE========= */
 
     .txt-container {
         padding-top: .5rem;
