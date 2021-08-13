@@ -56,8 +56,25 @@
     margin-top: .5rem;
 }
 
+.tw-pt {
+    font-size: 1.25rem;
+}
+
 .illustrator-2 {
     max-width: 648px;
+}
+
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+iframe {
+    position: absolute;
 }
 
 body a {
@@ -96,6 +113,14 @@ main {
 
 .img-grid:nth-child(1) {
     grid-area: 1 / 1 / 2 / 3;
+}
+
+.camerawork-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: .625rem;
+    column-gap: .625rem;
 }
 
 /* image overlays */
